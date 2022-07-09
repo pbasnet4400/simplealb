@@ -1,0 +1,8 @@
+services:
+  lb:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "40000-42000:40000-42000/udp"
+      - "1111:1111/udp"

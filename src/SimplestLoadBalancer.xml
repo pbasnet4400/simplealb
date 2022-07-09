@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SimplestLoadBalancer</name>
+    </assembly>
+    <members>
+        <member name="M:SimplestLoadBalancer.Program.Main(System.String,System.Int32,System.UInt32,System.UInt32,System.Byte,System.Boolean)">
+            <summary>
+            Sessionless UDP Load Balancer sends packets to targets without session affinity.
+            </summary>
+            <param name="serverPortRange">Set the ports to listen to and forward to backend targets (default "1812-1813")</param>
+            <param name="adminPort">Set the port that targets will send watchdog events (default 1111)</param>
+            <param name="clientTimeout">Seconds to allow before cleaning-up idle clients (default 30)</param>
+            <param name="targetTimeout">Seconds to allow before removing target missing watchdog events (default 30)</param>
+            <param name="defaultTargetWeight">Weight to apply to targets when not specified (default 100)</param>
+            <param name="unwise">Allows public IP addresses for targets (default is to only allow private IPs)</param>
+        </member>
+    </members>
+</doc>
